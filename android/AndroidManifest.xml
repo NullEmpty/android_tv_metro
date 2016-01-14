@@ -25,15 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DisplayItemActivity">
-            <intent-filter android:priority="-500">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:scheme="micontent" android:host="app" android:pathPrefix="/item"/>
-                <data android:scheme="micontent" android:host="game" android:pathPrefix="/item"/>
-                <data android:scheme="micontent" android:host="video" android:pathPrefix="/item"/>
-            </intent-filter>
-        </activity>
+        
 
         <activity android:name="com.xiaomi.mitv.app.ApplicationDetailActivity">
             <intent-filter android:priority="-500">
@@ -71,6 +63,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="micontent" android:host="game"  android:pathPrefix="/album"/>
                 <data android:scheme="micontent" android:host="game"  android:pathPrefix="/category"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".DisplayItemActivity">
+            <intent-filter android:priority="-500">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="micontent" android:host="app" android:pathPrefix="/item"/>
+                <data android:scheme="micontent" android:host="game" android:pathPrefix="/item"/>
+                <data android:scheme="micontent" android:host="video" android:pathPrefix="/item"/>
             </intent-filter>
         </activity>
 
